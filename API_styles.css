@@ -1,0 +1,274 @@
+a {
+	text-decoration: none;
+	color: #367c2b;
+}
+a:visited {
+	text-decoration: none;
+	color: #367c2b;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#EFEFEF;
+}
+button {
+	background: #EFEFEF;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+	color: #696969;
+}
+button:hover:enabled {
+	border: 1px solid #367c2b;
+	cursor: pointer;
+}
+button:disabled,
+button[disabled]{
+	background: #DDDDDD;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+	color: #AAAAAA;
+}
+/* Styles used in multiple files */
+.footer {
+	margin-top:40px;
+	height:40px;
+}
+.content {
+	border-collapse: collapse;
+	width:100%;
+	background:#FFFFFF;
+}
+.error {
+	text-align:center;
+	color:#FF0000;
+	font-weight:bold;
+}
+.container {
+	padding-left:2%;
+}
+.page-title {
+	margin-left:3%;
+	margin-bottom:1%;
+	font-size:26px;
+	color:#454545;
+	margin-top:2%
+}
+#error-border {
+	margin-top:3%;
+	background:#FFFFFF;
+	padding:10px;
+	width:80%;
+	box-shadow:1px 1px 1px 1px #AAAAAA;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Styles used in Header.php */
+#myjd-header {
+	color: #367c2b;
+	font-size: 34px;
+	text-align:left;
+	padding-left:10%;
+	padding-top:20px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+#myjd-subheader {
+	font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+	font-size:14px;
+	color:#888888;
+}
+#deere-logo {
+	padding-right:20%;
+}
+#separator-green {
+	width:100%;
+	background:#367c2b;
+	font-size:9px;
+}
+#separator-yellow {
+	width:100%;
+	background:#ffd700;
+	font-size:2px;
+}
+#tab-header {
+	width: 100%;
+	background: #FFFFFF;
+	height: 35px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.header-item {
+	line-height:35px;
+	width: 8%;
+	font-size:17px;
+	padding-right: 3%;
+}
+.header-item-left {
+	padding-left: 10%;
+}
+.header-link, .header-link:visited {
+	color: #888888;
+}
+.header-link:hover, .header-link:visited:hover {
+	color: #000000;
+	border-bottom:3px solid #888888;
+	padding-bottom:6px;
+}
+
+/* Styles used in index.php */
+.parameter {
+	width: 35%;
+}
+#token-secret {
+	font-size: 14px;
+}
+
+#application-credentials {
+	box-shadow:1px 1px 1px 1px #AAAAAA;
+	width:800px;
+	height:200px;
+	background:#FFFFFF;
+	padding-top:3%;
+	padding-left:3%;
+	padding-right:3%;
+	margin-bottom:3%;
+	margin-left:3%
+}
+
+#oauth-access-token {
+	background:#FFFFFF;
+	width:800px;
+	margin-left:3%;
+	padding:3%;
+	box-shadow:1px 1px 1px 1px #AAAAAA;
+}
+
+/* Used in Machines */
+
+#pin-lookup {
+	box-shadow:1px 1px 1px 1px #AAAAAA;
+	max-width: 600px;
+	background:#FFFFFF;
+	padding:20px;
+	line-height: 130%;
+}
+
+#pin-lookup input {
+	padding:6px;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+#pin-lookup button {
+	padding: 5px;
+	margin-left: 5px;
+	font-size: 16px;
+	width: auto;
+	height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 35%;
+    /* height: 300px; // only for demonstration, should be removed */
+    /* background: #ccc; */
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 65%;
+    /* background-color: #f1f1f1;
+    height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /*width: 120px;*/
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.selected-tab {
+	color:#000000;
+	border-bottom:3px solid #367c2b;
+	padding-bottom:6px
+}
+
+.greysm {
+color: #666666;
+font-size: 9px;
+}
